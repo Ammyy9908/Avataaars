@@ -139,6 +139,7 @@
                   fetch('https://source.unsplash.com/300x300/?face-people').then((response)=>
                   {
                     $('.open').css('visibility','visible');
+                      $('#gen').html("New Avatar");
                     $('#user').attr('src',response.url);
                     $('#link').attr('href',response.url);
                   }).catch(function() {
