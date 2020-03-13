@@ -172,6 +172,15 @@
                 var img_list=["a1.png","a2.png","a3.png"];
                 var random_user=img_list[Math.floor(Math.random()*(0,img_list.length)-1)];
                 $('#top-user').attr('src',random_user);
+            
+            // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
         
         });
     </script>
